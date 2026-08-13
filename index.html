@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wassi - Gestion des commandes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Wassi</h1>
+    <p>Toutes tes commandes, au même endroit.</p>
+  </header>
+
+  <main class="container">
+    <section class="dashboard">
+      <div class="card">
+        <span>Commandes</span>
+        <strong id="orders">0</strong>
+      </div>
+
+      <div class="card">
+        <span>Ventes</span>
+        <strong id="sales">0 FCFA</strong>
+      </div>
+
+      <div class="card">
+        <span>Livraisons</span>
+        <strong id="deliveries">0</strong>
+      </div>
+
+      <div class="card">
+        <span>En attente</span>
+        <strong id="pending">0</strong>
+      </div>
+    </section>
+
+    <section class="orders">
+      <div class="section-title">
+        <h2>Commandes récentes</h2>
+        <button onclick="addOrder()">+ Nouvelle commande</button>
+      </div>
+
+      <div id="orderList">
+        <p class="empty">Aucune commande pour le moment.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+        </html>
